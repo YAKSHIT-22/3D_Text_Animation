@@ -1,4 +1,4 @@
-<h2 align="center">3🅳 🆃🅴🆇🆃 🅰🅽🅸🅼🅰🆃🅸🅾🅽</h2><hr>
+<h2 align="center">3🅳 🆃🅴🆇🆃 🅰🅽🅸🅼🅰🆃🅸🅾🅽</h2>
 <h2 align="center">This Is Basic 3D Text Animation</h2>
 <img src="3danimation.gif" width="100%" height="600px" />
 <hr>
