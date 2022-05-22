@@ -179,17 +179,24 @@
     init();
   </script>
   <script>
-    var x= window.innerWidth/2;
-     window.addEventListener('resize', function(event) {
-          let box = document.getElementById('center');
-          let width = box.offsetWidth;
-          x = width / 3;
-       
-     
-     
+     var y = window.innerHeight/2;
+  
+    window.addEventListener('resize', ()=> {
+          
+          this.y = window.innerHeight/3;
+          console.log(this.y, 5);
+          init2(this.y);
 }, true);
-    window.onload = init;
-    function init() {
+window.addEventListener('load', ()=> {
+          
+          this.y = window.innerHeight/3;
+          console.log(this.y, 5);
+          init2(this.y);
+}, true);
+     
+
+    
+    function init2(y)  {
     
    
       var root = new THREERoot({
@@ -198,7 +205,7 @@
         fov:60
       });
       root.renderer.setPixelRatio(window.devicePixelRatio || 1);
-      root.camera.position.set(0,0,x);
+      root.camera.position.set(0,0,y);
       var textAnimation = createTextAnimation();
       textAnimation.position.y = +25;
       root.scene.add(textAnimation);
