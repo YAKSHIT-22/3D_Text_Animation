@@ -179,21 +179,22 @@
     init();
   </script>
   <script>
-     var y = window.innerHeight/2;
-  
+ var y = window.innerHeight/(window.innerWidth/370);
+  console.log(window.innerHeight)
+  console.log(window.innerWidth)
+  console.log(y)
     window.addEventListener('resize', ()=> {
           
-          this.y = window.innerHeight/3;
+          this.y = window.innerHeight/(window.innerWidth/370);
           console.log(this.y, 5);
           init2(this.y);
 }, true);
 window.addEventListener('load', ()=> {
           
-          this.y = window.innerHeight/3;
+          this.y = window.innerHeight/(window.innerWidth/370);
           console.log(this.y, 5);
           init2(this.y);
 }, true);
-     
 
     
     function init2(y)  {
